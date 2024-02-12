@@ -14,6 +14,7 @@ const Data = () => {
       querySnapshot.forEach((snapshot) => {
         trans.push({ id: snapshot.id, ...snapshot.data() });
       });
+
       setTransactions(trans);
     });
     return unsubscribe;
@@ -27,7 +28,7 @@ const Data = () => {
   }, []);
 
   return (
-    <div className="w-[100vw] mt-16 m-40">
+    <div className=" mt-16 m-36 truncate">
       <h2>Wallet Data</h2>
       <div className="mx-auto w-[100vw]">
         {transactions.length > 0 ? (
