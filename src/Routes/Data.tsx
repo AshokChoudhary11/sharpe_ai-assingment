@@ -28,14 +28,18 @@ const Data = () => {
   }, []);
 
   return (
-    <div className=" mt-16 m-36 truncate">
-      <h2>Wallet Data</h2>
-      <div className="mx-auto w-[100vw]">
-        {transactions.length > 0 ? (
-          transactions.map((data) => <TransactionCard data={data} />)
-        ) : (
-          <div>No transactions</div>
-        )}
+    <div className="mt-4 md:mt-12 p-4 flex justify-center items-center">
+      <div className="">
+        <h2 className="text-2xl font-bold">Wallet Data</h2>
+        <div className="mx-auto w-full md:w-[80vw] items-center">
+          {transactions.length > 0 ? (
+            transactions.map((data) => (
+              <TransactionCard key={data.id} data={data} />
+            ))
+          ) : (
+            <div>No transactions</div>
+          )}
+        </div>
       </div>
     </div>
   );

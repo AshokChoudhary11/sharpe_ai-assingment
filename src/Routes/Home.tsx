@@ -1,11 +1,11 @@
 const Home = () => {
   return (
-    <div className="flex flex-col  w-full h-full ">
-      <div className="items-center justify-center text-center mt-40">
-        <div className="text-8xl font-bold mb-4">
+    <div className="flex items-center justify-center w-full h-full p-4 md:p-8">
+      <div className="text-center">
+        <div className="text-4xl md:text-8xl font-bold mb-4">
           AI-POWERED ASSET MANAGEMENT SUPERAPP
         </div>
-        <div className="text-2xl max-w-xl m-auto">
+        <div className="text-base md:text-2xl max-w-2xl mx-auto">
           Sharpe is the frontend for intelligence, tracking, investing in, and
           automating your digital assets.
         </div>
