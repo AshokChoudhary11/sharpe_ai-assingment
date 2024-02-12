@@ -17,6 +17,7 @@ const Transactions: React.FC = () => {
       await addDoc(collection(db, "transactions"), {
         walletAddress,
         amount: Number(amount),
+        createdAt: Date.now(),
       });
       alert("Transaction saved!");
     } catch (err) {
