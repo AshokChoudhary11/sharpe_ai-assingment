@@ -34,7 +34,7 @@ const Data = () => {
         <div className="mx-auto w-full md:w-[80vw] items-center">
           {transactions.length > 0 ? (
             transactions.map((data) => (
-              <TransactionCard key={data.id} data={data} />
+              <TransactionCard key={data} data={data} />
             ))
           ) : (
             <div>No transactions</div>

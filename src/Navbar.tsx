@@ -1,39 +1,10 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 export const Navbar = () => {
   const location = useLocation();
   const { pathname } = location;
 
-  // return (
-  //   <div>
-  //     <nav className="flex gap-9 mb-4 fixed top-0 left-0 right-0 bg-gray-800 p-4 shadow-md">
-  //       <Link to="/" className="items-center">
-  //         <img
-  //           className="h-7 w-auto"
-  //           src="https://framerusercontent.com/images/pDyVPAanzfYpfZFNjTiMP2nAQU.svg"
-  //           alt="Your Company"
-  //         />
-  //       </Link>
-  //       <Link to="/" className="text-blue-500 hover:text-blue-700">
-  //         Home
-  //       </Link>
-  //       <Link to="/transactions" className="text-blue-500 hover:text-blue-700">
-  //         Transaction
-  //       </Link>
-  //       <Link to="/data" className="text-blue-500 hover:text-blue-700">
-  //         Data
-  //       </Link>
-  //       <div className="hidden sm:ml-6 sm:block">
-  //         <div className="flex space-x-4">
-  //           <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
-  //           <a href="/transactions" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Transaction</a>
-  //           <a href="/data" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Data</a>
-  //         </div>
-  //       </div>
-  //     </nav>
-  //   </div>
-  // );
   const [showDropdown, setShowDropdown] = useState(false);
   return (
     <nav className="bg-gray-800">
@@ -137,7 +108,6 @@ export const Navbar = () => {
                   ? "bg-gray-900 text-white"
                   : ` text-gray-300 hover:bg-gray-700 hover:text-white`
               } rounded-md px-3 py-2 text-sm font-medium block`}
-              // className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
               aria-current="page"
             >
               Home
@@ -149,7 +119,6 @@ export const Navbar = () => {
                   ? "bg-gray-900 text-white"
                   : ` text-gray-300 hover:bg-gray-700 hover:text-white`
               } rounded-md px-3 py-2 text-sm font-medium block`}
-              // className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
             >
               Transactions
             </a>
@@ -160,7 +129,6 @@ export const Navbar = () => {
                   ? "bg-gray-900 text-white"
                   : ` text-gray-300 hover:bg-gray-700 hover:text-white`
               } rounded-md px-3 py-2 text-sm font-medium block`}
-              // className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
             >
               Data
             </a>
