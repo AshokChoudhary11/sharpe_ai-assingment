@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { db } from "../firebase/app";
-import { addDoc, collection, setDoc } from "firebase/firestore";
+import { addDoc, collection } from "firebase/firestore";
 const Transactions: React.FC = () => {
   const [walletAddress, setWalletAddress] = useState<string>("");
   const [amount, setAmount] = useState<number | null>(null);

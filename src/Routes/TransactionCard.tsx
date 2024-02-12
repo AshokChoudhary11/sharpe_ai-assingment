@@ -1,6 +1,4 @@
-import React from "react";
-
-const TransactionCard = ({ data }) => {
+const TransactionCard = ({ data }:{data:any}) => {
   return (
     <div className="w-full flex">
       <div className="mt-4 p-6 w-4/5 text-left border-2 rounded border-gray-500">
